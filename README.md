@@ -1,17 +1,24 @@
-# College Football Playoff Prediction
+# College Football Playoff Prediction Model
 
-This project predicts winners of the College Football Playoff (CFP) quarterfinals using Python.  
-It demonstrates **data collection, feature engineering, logistic regression modeling, and visualization**.
+This project builds a machine learning model to predict CFP game outcomes
+using team-level statistical differences.
 
-## Features
-- Calculates feature differences: PPG, Points Allowed, Yards per Play, Opponent 3rd Down Conversion
-- Predicts win probabilities using logistic regression
-- Visualizes matchup probabilities with bar charts
-- Supports synthetic/historical datasets
+## Features Used
+- Points Per Game Difference (PPG_Diff)
+- Points Allowed Per Game Difference (PAPG_Diff)
+- Yards Per Play Difference (YAP_Diff)
+- Opponent 3rd Down Conversion Difference (Opp3D_Diff)
 
-## Tools & Libraries
-- Python, pandas, numpy, scikit-learn, matplotlib
-- Jupyter Notebook for workflow and visualization
+## Model
+- Logistic Regression
+- Trained on simulated historical CFB data
+- Outputs win probabilities for Team A vs Team B
 
-## How to Run
-1. Clone the repository: 
+## Files
+- `cfb_matchup_diffs.ipynb` – feature engineering, modeling, predictions
+- `historical_cfb_random.csv` – simulated training data
+- `cfb_stats.csv` – matchup input data
+
+## Disclaimer
+Historical data were simulated for demonstration purposes.
+This project focuses onthe  modeling approach and feature design.
